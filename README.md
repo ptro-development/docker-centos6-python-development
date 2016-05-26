@@ -4,6 +4,8 @@ Build of docker image for basic python development by using Ansible-2 based on C
 - python-setuptools
 - python-nose
 - python-mock
+- nose-cov
+- flake8
 - etc ...
 
 are available. Look for more details at relevant ansible module triggered from dockerfile.
