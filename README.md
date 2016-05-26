@@ -6,6 +6,8 @@ Build of docker image for basic python development by using Ansible-2 based on C
 - python-mock
 - nose-cov
 - flake8
+- Vim Pathogen
+- Vim Syntastic
 - etc ...
 
 are available. Look for more details at relevant ansible module triggered from dockerfile.
