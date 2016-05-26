@@ -1,8 +1,12 @@
 # docker-centos6-python-development
-Build of docker image for basic python development by using Ansible-2 based on CentOS6.
+Build of docker image for basic python development by using Ansible-2 based on CentOs6.Finall built of python docker image is friendly to Vim developers. Things like
+- python-pip
+- python-setuptools
+- python-nose
+- python-mock
+- etc ...
 
-Finall built python docker image is friendly to Vim developers. Look for more details
-at relevant ansible module triggered from dockerfile.
+are available. Look for more details at relevant ansible module triggered from dockerfile.
 
 # To build python docker image run (this will take a while so get some tee / coffee)
 ```
