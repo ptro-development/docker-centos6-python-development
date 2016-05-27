@@ -17,3 +17,8 @@ RUN service sshd restart && su - ansible -c "ssh-keyscan localhost > /home/ansib
 # To start services when initialising docker container
 ADD run_at_startup /usr/bin/run_at_startup
 RUN echo "/usr/bin/run_at_startup" >> ~/.bashrc && chmod +x /usr/bin/run_at_startup
+
+# To run any extra scripts found in end_scripts directory in alphabetical order.
+ADD bin /root/bin
+ADD end_scripts /root/bin/end_scripts
+RUN /root/bin/execute_end_scripts.sh /root/bin/end_scripts
