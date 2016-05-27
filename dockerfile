@@ -15,7 +15,7 @@ RUN yum -y install git && su - ansible -c "git clone https://github.com/ptro-dev
 RUN service sshd restart && su - ansible -c "ssh-keyscan localhost > /home/ansible/.ssh/known_hosts && ansible-playbook /home/ansible/ansible_python_vim_developer/roles/python_vim_developer_nodes.yml"
 
 # To start services when initialising docker container
-ADD run_at_startup /usr/bin/run_at_startup
+ADD bin/run_at_startup /usr/bin/run_at_startup
 RUN echo "/usr/bin/run_at_startup" >> ~/.bashrc && chmod +x /usr/bin/run_at_startup
 
 # To run any extra scripts found in end_scripts directory in alphabetical order.
