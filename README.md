@@ -23,3 +23,6 @@ docker build -t "centos6:python_developer" .
 ```
 docker run -i -t "centos6:python_developer" /bin/bash
 ```
+
+# How to extend build ?
+Apart from forking this repository and adding your extra stuff you can add additional scripts under *end_scripts* directory. These are going to be executed then at the end of build process in alphabetical order inside container under root user.
