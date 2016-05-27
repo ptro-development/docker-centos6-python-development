@@ -23,7 +23,7 @@ docker build -t "centos6:python_developer" .
 ```
 docker run -i -t "centos6:python_developer" /bin/bash
 ```
-You can connect to the running docker by using ssh as this service is was stared at stratup of docker container. Developer user has password *basebuild*
+You can connect to the running docker by using ssh as this service is stared at stratup of docker container. Developer user has password *basebuild*
 ```
 ssh developer@docker_ip_address_here
 ```
