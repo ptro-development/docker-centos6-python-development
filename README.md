@@ -35,4 +35,4 @@ sudo su -
 # How to extend build ?
 Apart from forking this repository and adding your extra stuff you can add additional scripts under *end_scripts* directory. These are going to be executed at the end of build process in alphabetical order inside container under root user.
 
-Exmaple of script at https://github.com/ptro-development/ansible_python_trader/blob/master/01_trader_setup
+Example of script at https://github.com/ptro-development/ansible_python_trader/blob/master/01_trader_setup
